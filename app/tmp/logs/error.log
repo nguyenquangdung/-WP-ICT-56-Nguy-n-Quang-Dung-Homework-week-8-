@@ -1,0 +1,160 @@
+2015-04-05 22:12:11 Error: [MissingDatasourceConfigException] The datasource configuration "default" was not found in database.php
+Exception Attributes: array (
+  'config' => 'default',
+)
+Request URL: /shoppingcart/
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Model\ConnectionManager.php(91): ConnectionManager::_getConnectionObject('default')
+#1 C:\xampp\htdocs\shoppingcart\lib\Cake\Model\Model.php(3471): ConnectionManager::getDataSource('default')
+#2 C:\xampp\htdocs\shoppingcart\lib\Cake\Model\Model.php(1126): Model->setDataSource('default')
+#3 C:\xampp\htdocs\shoppingcart\lib\Cake\Model\Model.php(3493): Model->setSource('products')
+#4 C:\xampp\htdocs\shoppingcart\lib\Cake\Model\Model.php(2897): Model->getDataSource()
+#5 C:\xampp\htdocs\shoppingcart\lib\Cake\Model\Model.php(2869): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\shoppingcart\app\Controller\ProductsController.php(7): Model->find('all')
+#7 [internal function]: ProductsController->index()
+#8 C:\xampp\htdocs\shoppingcart\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#11 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-04-05 22:48:59 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\shoppingcart\app\View\Carts\view.ctp, line 49]
+2015-04-05 22:48:59 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /shoppingcart/carts/view
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49, Array)
+#2 C:\xampp\htdocs\shoppingcart\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49, Array)
+#3 C:\xampp\htdocs\shoppingcart\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-05 22:50:29 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW) in [C:\xampp\htdocs\shoppingcart\app\View\Carts\view.ctp, line 49]
+2015-04-05 22:50:29 Error: [FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+Request URL: /shoppingcart/carts/view
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49, Array)
+#2 C:\xampp\htdocs\shoppingcart\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49, Array)
+#3 C:\xampp\htdocs\shoppingcart\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-05 23:08:55 Error: [MissingPluginException] Plugin DebugKit could not be found.
+Exception Attributes: array (
+  'plugin' => 'DebugKit',
+)
+Request URL: /shoppingcart/users/login
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Core\App.php(365): CakePlugin::path('DebugKit')
+#1 C:\xampp\htdocs\shoppingcart\lib\Cake\Core\App.php(226): App::pluginPath('DebugKit')
+#2 C:\xampp\htdocs\shoppingcart\lib\Cake\Core\App.php(547): App::path('Controller/Comp...', 'DebugKit')
+#3 [internal function]: App::load('ToolbarComponen...')
+#4 [internal function]: spl_autoload_call('ToolbarComponen...')
+#5 C:\xampp\htdocs\shoppingcart\lib\Cake\Controller\ComponentCollection.php(110): class_exists('ToolbarComponen...')
+#6 C:\xampp\htdocs\shoppingcart\lib\Cake\Controller\ComponentCollection.php(53): ComponentCollection->load('DebugKit.Toolba...', Array)
+#7 C:\xampp\htdocs\shoppingcart\lib\Cake\Controller\Controller.php(643): ComponentCollection->init(Object(UsersController))
+#8 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(181): Controller->constructClasses()
+#9 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#10 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-04-05 23:13:48 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\shoppingcart\app\View\Layouts\default.ctp, line 5]
+2015-04-05 23:13:48 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /shoppingcart/users
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Error\ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 5)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 5, Array)
+#2 C:\xampp\htdocs\shoppingcart\lib\Cake\Core\App.php(929): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 5, Array)
+#3 C:\xampp\htdocs\shoppingcart\lib\Cake\Core\App.php(902): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-04-05 23:30:00 Error: [MissingActionException] Action ProductsController::products() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'products',
+)
+Request URL: /shoppingcart/products/products/index
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-05 23:30:01 Error: [MissingActionException] Action ProductsController::products() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'products',
+)
+Request URL: /shoppingcart/products/products/products/index
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-05 23:30:02 Error: [MissingActionException] Action ProductsController::products() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'products',
+)
+Request URL: /shoppingcart/products/products/products/products/index
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-05 23:30:03 Error: [MissingActionException] Action ProductsController::products() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'products',
+)
+Request URL: /shoppingcart/products/products/products/products/products/index
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-05 23:30:03 Error: [MissingActionException] Action ProductsController::products() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'products',
+)
+Request URL: /shoppingcart/products/products/products/products/products/products/index
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-05 23:30:40 Error: [MissingActionException] Action ProductsController::products() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'products',
+)
+Request URL: /shoppingcart/products/products/index
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(185): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\shoppingcart\lib\Cake\Routing\Dispatcher.php(160): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-04-05 23:32:45 Error: [MissingControllerException] Controller class TopicsController could not be found.
+Exception Attributes: array (
+  'class' => 'TopicsController',
+  'plugin' => NULL,
+)
+Request URL: /shoppingcart/topics
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-05 23:33:42 Error: [MissingControllerException] Controller class TopicsController could not be found.
+Exception Attributes: array (
+  'class' => 'TopicsController',
+  'plugin' => NULL,
+)
+Request URL: /shoppingcart/topics
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-05 23:34:57 Error: [MissingControllerException] Controller class TopicsController could not be found.
+Exception Attributes: array (
+  'class' => 'TopicsController',
+  'plugin' => NULL,
+)
+Request URL: /shoppingcart/topics
+Stack Trace:
+#0 C:\xampp\htdocs\shoppingcart\app\webroot\index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
